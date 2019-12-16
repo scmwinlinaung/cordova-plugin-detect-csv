@@ -1,6 +1,5 @@
 
-* Notes: The @objc shows that this class & function should be exposed to Cordova.
-*/
+
 import UIKit
 var fileUrl: String?
 @objc(detect_csv) class detect_csv : CDVPlugin {
