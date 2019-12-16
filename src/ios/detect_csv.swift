@@ -1,4 +1,4 @@
-/*
+
 * Notes: The @objc shows that this class & function should be exposed to Cordova.
 */
 import UIKit
@@ -6,11 +6,11 @@ var fileUrl: String?
 @objc(detect_csv) class detect_csv : CDVPlugin {
   @objc(getFileUrl:) // Declare your function name.
   func getFileUrl(command: CDVInvokedUrlCommand) { // write the function code.
-    var document: Document?
+    var document: UIDocument?
     document?.open(completionHandler: { (success) in
          if success {
-             if self.document?.fileType == "public.comma-separated-values-text" {
-                 fileUrl = self.document?.fileURL
+            if document?.fileType == "public.comma-separated-values-text" {
+                fileUrl = document!.fileURL.absoluteString
              }
          }
     })
