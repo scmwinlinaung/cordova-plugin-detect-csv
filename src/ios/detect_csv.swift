@@ -1,20 +1,20 @@
 
 
 import UIKit
-enum DocumentTypes: String {
-    case pdf
-    case image
-    case all
-    case csv
-    var uti: String {
-        switch self {
-            case .pdf: return "com.adobe.pdf"
-            case .image: return "public.image"
-            case .all: return "public.data"
-            case .csv: return "public.comma-separated-values-text"
-        }
-    }
-}
+//enum DocumentTypes: String {
+//    case pdf
+//    case image
+//    case all
+//    case csv
+//    var uti: String {
+//        switch self {
+//            case .pdf: return "com.adobe.pdf"
+//            case .image: return "public.image"
+//            case .all: return "public.data"
+//            case .csv: return "public.comma-separated-values-text"
+//        }
+//    }
+//}
 @objc(detect_csv)
 class detect_csv : CDVPlugin {
     var fileUrl: URL?
